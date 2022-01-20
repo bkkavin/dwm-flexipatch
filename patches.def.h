@@ -558,14 +558,14 @@
  * it will be opened on the first tag.
  * https://dwm.suckless.org/patches/emptyview/
  */
-#define EMPTYVIEW_PATCH 0
+#define EMPTYVIEW_PATCH 1
 
 /* This patch allows the user to change size and placement of floating windows using only the
  * keyboard. It also allows for temporary vertical and horizontal extension of windows similar
  * to other WMs fill command.
  * https://dwm.suckless.org/patches/exresize/
  */
-#define EXRESIZE_PATCH 0
+#define EXRESIZE_PATCH 1
 
 /* Only allow clients to "fullscreen" into the space currently given to them.
  * As an example, this will allow you to view a fullscreen video in your browser on
@@ -573,7 +573,7 @@
  * This patch takes precedence over the fakefullscreen client patch below.
  * https://dwm.suckless.org/patches/fakefullscreen/
  */
-#define FAKEFULLSCREEN_PATCH 0
+#define FAKEFULLSCREEN_PATCH 1
 
 /* Similarly to the fakefullscreen patch this patch only allows clients to "fullscreen" into
  * the space currently given to them.
@@ -590,27 +590,27 @@
  * The size and position can be specified using absolute, relative or fixed co-ordinates and
  * https://github.com/bakkeby/patches/wiki/floatpos/
  */
-#define FLOATPOS_PATCH 0
+#define FLOATPOS_PATCH 1
 
 /* Add-on functionality for the above: make the float positions respect outer (vanity)gaps. */
-#define FLOATPOS_RESPECT_GAPS_PATCH 0
+#define FLOATPOS_RESPECT_GAPS_PATCH 1
 
 /* This patch provides the ability to focus the tag on the immediate left or right of the
  * currently focused tag. It also allows to send the focused window either on the left or
  * the right tag.
  * http://dwm.suckless.org/patches/focusadjacenttag/
  */
-#define FOCUSADJACENTTAG_PATCH 0
+#define FOCUSADJACENTTAG_PATCH 1
 
 /* Allows focusing on clients based on direction (up, down, left, right) instead of client order.
  * https://github.com/bakkeby/patches/wiki/focusdir/
  */
-#define FOCUSDIR_PATCH 0
+#define FOCUSDIR_PATCH 1
 
 /* A simple patch that just puts focus back to the master client.
  * https://dwm.suckless.org/patches/focusmaster/
  */
-#define FOCUSMASTER_PATCH 0
+#define FOCUSMASTER_PATCH 1
 
 /* Switch focus only by mouse click and not sloppy (focus follows mouse pointer).
  * https://dwm.suckless.org/patches/focusonclick/
@@ -622,7 +622,7 @@
  *   xdotool selectwindow -- set_window --urgency 1
  * https://dwm.suckless.org/patches/focusurgent/
  */
-#define FOCUSURGENT_PATCH 0
+#define FOCUSURGENT_PATCH 1
 
 /* By default, dwm responds to _NET_ACTIVE_WINDOW client messages by setting
  * the urgency bit on the named window. This patch activates the window instead.
@@ -635,19 +635,19 @@
  * Also see the dwmc patch, which takes precedence over this patch.
  * https://dwm.suckless.org/patches/fsignal/
  */
-#define FSIGNAL_PATCH 0
+#define FSIGNAL_PATCH 1
 
 /* Applies the monocle layout with the focused client on top and hides the bar. When pressed
  * again it shows the bar and restores the layout that was active before going fullscreen.
  * https://dwm.suckless.org/patches/fullscreen/
  */
-#define FULLSCREEN_PATCH 0
+#define FULLSCREEN_PATCH 1
 
 /* This patch provides a keybinding to rotate all clients in the currently selected
  * area (master or stack) without affecting the other area.
  * https://dwm.suckless.org/patches/inplacerotate/
  */
-#define INPLACEROTATE_PATCH 0
+#define INPLACEROTATE_PATCH 1
 
 /* This patch lets you define custom insets from each edge of the screen. One use case would be
  * to arrange space for an external bar.
@@ -672,7 +672,7 @@
 /* Adds rule option for clients to avoid accidental termination by killclient for sticky windows.
  * https://dwm.suckless.org/patches/ispermanent/
  */
-#define ISPERMANENT_PATCH 0
+#define ISPERMANENT_PATCH 1
 
 /* This patch adds key modes (like in vim or emacs) where chains of keyboard shortcuts
  * can be performed.
@@ -698,13 +698,13 @@
  * in such scenarios the previous window loses fullscreen.
  * https://github.com/bakkeby/patches/blob/master/dwm/dwm-losefullscreen-6.2.diff
  */
-#define LOSEFULLSCREEN_PATCH 0
+#define LOSEFULLSCREEN_PATCH 1
 
 /* This patch adds helper functions for maximizing, horizontally and vertically, floating
  * windows using keybindings.
  * https://dwm.suckless.org/patches/maximize/
  */
-#define MAXIMIZE_PATCH 0
+#define MAXIMIZE_PATCH 1
 
 /* Control Music Player Daemon via keybinds.
  * You need to uncomment the corresponding line in config.mk to use the -lmpdclient library
@@ -713,7 +713,7 @@
  *    - libmpdclient
  * https://dwm.suckless.org/patches/mpdcontrol/
  */
-#define MPDCONTROL_PATCH 0
+#define MPDCONTROL_PATCH 1
 
 /* Adds rules per monitor, e.g. have default layouts per monitor.
  * The use case for this is if the second monitor is vertical (i.e. rotated) then
@@ -734,17 +734,17 @@
  * key is pressed.
  * https://dwm.suckless.org/patches/moveplace/
  */
-#define MOVEPLACE_PATCH 0
+#define MOVEPLACE_PATCH 1
 
 /* This patch allows you to move and resize dwm's clients using keyboard bindings.
  * https://dwm.suckless.org/patches/moveresize/
  */
-#define MOVERESIZE_PATCH 0
+#define MOVERESIZE_PATCH 1
 
 /* This patch allows you to move clients around in the stack and swap them with the master.
  * https://dwm.suckless.org/patches/movestack/
  */
-#define MOVESTACK_PATCH 0
+#define MOVESTACK_PATCH 1
 
 /* Adds support for the _NET_CLIENT_LIST_STACKING atom, needed by certain applications like the
  * Zoom video conferencing application.
@@ -755,7 +755,7 @@
 /* Removes the border when there is only one window visible.
  * https://dwm.suckless.org/patches/noborder/
  */
-#define NOBORDER_PATCH 0
+#define NOBORDER_PATCH 1
 
 /* Enable modifying or removing dmenu in config.def.h which resulted previously in a
  * compilation error because two lines of code hardcode dmenu into dwm.
@@ -775,7 +775,7 @@
  *     { ClkClientWin,              0,              Button8,        movemouse,      {0} },
  *     { ClkClientWin,              0,              Button9,        resizemouse,    {0} },
  */
-#define NO_MOD_BUTTONS_PATCH 0
+#define NO_MOD_BUTTONS_PATCH 1
 
 /* When terminals have transparency then their borders also become transparent.
  * This patch ensures that borders have no transparency. Note that this patch is
@@ -795,13 +795,13 @@
 #define ON_EMPTY_KEYS_PATCH 0
 
 /* Minor patch that prevents more than one rule being matched for a given client. */
-#define ONLY_ONE_RULE_MATCH_PATCH 0
+#define ONLY_ONE_RULE_MATCH_PATCH 1
 
 /* This patch makes it so dwm will only exit via quit() if no windows are open.
  * This is to prevent you accidentally losing all your work.
  * https://dwm.suckless.org/patches/onlyquitonempty/
  */
-#define ONLYQUITONEMPTY_PATCH 0
+#define ONLYQUITONEMPTY_PATCH 1
 
 /* The pertag patch adds nmaster, mfacts and layouts per tag rather than per
  * monitor (default).
@@ -812,7 +812,7 @@
 /* Option to store gaps on a per tag basis rather than on a per monitor basis.
  * Depends on both pertag and vanitygaps patches being enabled.
  */
-#define PERTAG_VANITYGAPS_PATCH 0
+#define PERTAG_VANITYGAPS_PATCH 1
 
 /* This controls whether or not to also store bar position on a per
  * tag basis, or leave it as one bar per monitor.
@@ -822,7 +822,7 @@
 /* This patch lets you change the position of a client in the stack using the mouse.
  * https://github.com/bakkeby/patches/wiki/placemouse
  */
-#define PLACEMOUSE_PATCH 0
+#define PLACEMOUSE_PATCH 1
 
 /* This patch provides a way to move clients up and down inside the client list.
  * https://dwm.suckless.org/patches/push/
@@ -847,7 +847,7 @@
  * leftmost tag, and will be reduced to one tag after the operation is complete.
  * https://dwm.suckless.org/patches/reorganizetags/
  */
-#define REORGANIZETAGS_PATCH 0
+#define REORGANIZETAGS_PATCH 1
 
 /* By default, windows only resize from the bottom right corner. With this
  * patch the mouse is warped to the nearest corner and you resize from there.
@@ -859,13 +859,13 @@
  * This takes precedence over the resizecorners patch.
  * https://github.com/bakkeby/patches/blob/master/dwm/dwm-resizepoint-6.2.diff
  */
-#define RESIZEPOINT_PATCH 0
+#define RESIZEPOINT_PATCH 1
 
 /* Adds a keyboard shortcut to restart dwm or alternatively by using kill -HUP dwmpid.
  * Additionally dwm can quit cleanly by using kill -TERM dwmpid.
  * https://dwm.suckless.org/patches/restartsig/
  */
-#define RESTARTSIG_PATCH 0
+#define RESTARTSIG_PATCH 1
 
 /* Adds rio-like drawing to resize the selected client.
  * This depends on an external tool slop being installed.
